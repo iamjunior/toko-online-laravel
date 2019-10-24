@@ -56,7 +56,6 @@ class UserController extends Controller
         $user->address  = $request->get('address');
         $user->phone    = $request->get('phone');
         $user->status   = $request->get('status');
-
         if($request->file('avatar')){
             if($user->avatar && file_exists(storage_path('app/public/' . $user->avatar)))
             {
