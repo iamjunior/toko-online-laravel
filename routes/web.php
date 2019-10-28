@@ -37,5 +37,7 @@ Route::get('/categories/{id}/restore', 'CategoryController@restore')->name('cate
 Route::delete('/categories/{category}/delete-permanent', 'CategoryController@deletePermanent')->name('categories.delete-permanent');
 Route::resource("categories", "CategoryController");
 
-
+Route::delete('/books/{id}/delete-permanent','BookController@deletePermanent')->name('books.delete-permanent');
+Route::post('/books/{book}/restore', 'BookController@restore')->name('books.restore');
+Route::get('/books/trash', 'BookController@trash')->name('books.trash');
 Route::resource('books', 'BookController');
