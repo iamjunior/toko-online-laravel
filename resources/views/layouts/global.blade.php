@@ -86,6 +86,12 @@
                         <span class="oi oi-book"></span>Manage books
                     </a>
                 </li>
+
+                <li>
+                    <a href="{{route('orders.index')}}">
+                        <span class="oi oi-inbox"></span>Manage orders
+                    </a>
+                </li>
                 
                 <div class="d-block d-md-none">
                     <div class="dropdown-divider"></div>

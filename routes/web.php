@@ -41,3 +41,5 @@ Route::delete('/books/{id}/delete-permanent','BookController@deletePermanent')->
 Route::post('/books/{book}/restore', 'BookController@restore')->name('books.restore');
 Route::get('/books/trash', 'BookController@trash')->name('books.trash');
 Route::resource('books', 'BookController');
+
+Route::resource('orders', 'OrderController');

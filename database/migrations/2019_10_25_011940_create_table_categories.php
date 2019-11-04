@@ -20,7 +20,7 @@ class CreateTableCategories extends Migration
             $table->string('image')->comment("Berisi Nama File Image Saja Tanpa Patch");
             $table->integer('created_by');
             $table->integer('updated_by')->nullable();
-            $table->integer('delted_by')->nullable();
+            $table->integer('deleted_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
